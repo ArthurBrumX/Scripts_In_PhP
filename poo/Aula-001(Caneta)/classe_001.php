@@ -1,4 +1,5 @@
 <?php
+// Sempre crie um documento separado para criar uma classe
 
 class caneta{
     var $modelo;
