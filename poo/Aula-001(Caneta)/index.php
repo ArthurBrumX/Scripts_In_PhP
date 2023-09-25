@@ -11,7 +11,6 @@
         $c1 = new caneta; // instanciamento
         $c1 -> cor = "Azul";
         $c1 -> ponta = 0.5;
-        $c1 -> tampada = true;
         $c1 -> tampar();
         print_r($c1);
 
