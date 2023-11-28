@@ -1,0 +1,23 @@
+instalacao - Acessar o link e baixar o executavel.
+    https://getcomposer.org/download/
+
+    fazer a instalacao normalmente dentro da pasta C:
+        entrar em painel de controle
+            configuracao avancadas do sistema
+                variaveis de ambiente
+                    novo
+                        escoher a pasta onde foi instalada o composer
+                            escoher o arquivo 2 da pasta
+                                salva
+
+
+iniciar o composer em uma pasta especifica(no prompt do computador)
+    
+    no prompt - escolher o diretorio da pasta onde vc vai colocar o composer
+        Ex: cd C:\xampp\htdocs\Scripts_In_PhP\vagas
+            depois pedir para iniciar no prompt mesmo com o comando - composer init
+
+        (tem q ter um arquivo .json onde vc for coloca esse comando)
+
+
+obs: é bom reeiniciar o vscode depois do processo
