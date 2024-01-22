@@ -1,5 +1,8 @@
 <?php
 
+    // $_post
+    // $_get - São variaveis q pegam informacao do ambiente(uma leva e outra tras)
+
     // Tipos Basicos
 
     $nome = "Arthur"; // string

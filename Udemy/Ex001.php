@@ -28,7 +28,7 @@
 
      //validacao basica
 
-     if (isset($nome1)){ // isset serve para verificar se a variavel tem algum valor;
+     if (isset($nome1)){ // isset serve para verificar se a variavel tem algum valor
         echo '$nome1';
      }
 
