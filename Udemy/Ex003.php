@@ -8,6 +8,7 @@
 
     // $ip = $SERVER["REMOTE_ADDR"];
     $ip = $_SERVER["SCRIPT_NAME"];
+    
     echo $ip;
 
 ?>
