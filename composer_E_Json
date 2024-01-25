@@ -2,13 +2,14 @@ instalacao - Acessar o link e baixar o executavel.
     https://getcomposer.org/download/
 
     fazer a instalacao normalmente dentro da pasta C:
-        entrar em painel de controle ( botao dieito em computador)
-            configuracao avancadas do sistema
-                variaveis de ambiente
-                    novo
-                        escoher a pasta onde foi instalada o composer
-                            escoher o arquivo 2 da pasta
-                                salva
+        entrar em configuracoes
+            entrar em sobre 
+                configuracao avancadas do sistema
+                    variaveis de ambiente
+                        novo
+                            escoher a pasta onde foi instalada o composer
+                                escoher o 2º arquivo da pasta
+                                    salvar;
 
 
 iniciar o composer em uma pasta especifica(no prompt do computador)
