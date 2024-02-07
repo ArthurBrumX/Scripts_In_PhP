@@ -19,7 +19,11 @@ Exemplo #1 tags abertura e fechamento do php
 As tags curtas (exemplo3) estão disponiveis por padrao, mas podem ser desabilitadas atraves da diretiva short_open_tag no arquivo de configuracao do php.ini, ou estarao 
 desabilitadas por padrao se o php for compliado com a configuracao --disable-short-tags.
 
-Nota: Como as tags
+Nota: Como as tags curtas podem ser desabilitadas, é recomendado usar apenas as tags normais (<?php ?> e <?= ?>) para maximizar a compatibilidade.
+
+Se um arquvo contiver apenas codigo PHP, é preferivel omitir a tag de fechamento do php no final do arquvo. isso evita que espacos em branco ou novas linhas sejam adcionados 
+acidentalmente após a tag de fechamento do PHP, o que pode causar efeitos indesejados porque o php iniciará o buffer de saida quando nao houver intencao de enviar qualquer
+saida naquele ponto do script
 
 
 
