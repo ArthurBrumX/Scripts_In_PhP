@@ -18,7 +18,6 @@
             <a class="btn btn-success text-white" href="./create.php">New</a>
         </div>
         <div class="row flex-center">
-            <?php if(isset($_GET['message'])) echo(printMessage($_GET['message'])); ?>
         </div>
     
         <table class="table-users">
@@ -39,8 +38,8 @@
                     <a class="btn btn-danger text-white" href="./delete.php?id=<?=$row['id']?>">Remove</a>
                 </td>
             </tr>
-            <?php endforeach; ?>
         </table>
+        <a href="main.html"><button>Voltar</button></a>
     </div>
 </body>
 </html>
