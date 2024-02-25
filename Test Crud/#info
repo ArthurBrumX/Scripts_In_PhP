@@ -1,0 +1,9 @@
+Esta pasta esta designada para fins academicos! 
+o intuito seria para repetir varias vezes a criacao de um crud com poo ( orientado a objeto) na linguagem php!
+Até que fique perfeito, e o conteudo seje bem fixado na memoria!
+
+    * Todos eles irao ultilizar a mesma base de dados de um banco de dados criado localmente;
+    * Todos eles teram uma interface grafica simples somente com as funcoes (Create, Read, Update, Delete);
+    * O script de criacao do banco de dados esta disponivel dentro deste documento;
+    * Como dito antes, os crud´s erao ser focado principalmente na linguagem php! (posteriormente posso tentar outra linguagem)!
+    * O SGBD (Sistema Gerenciador De Banco De Dados) escolhido por min será o postgresql!
