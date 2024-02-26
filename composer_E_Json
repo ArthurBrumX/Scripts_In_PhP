@@ -1,7 +1,10 @@
 instalacao - Acessar o link e baixar o executavel.
     https://getcomposer.org/download/
 
-    fazer a instalacao normalmente dentro da pasta C:
+    fazer a instalacao normalmente dentro da pasta C: 
+        (OBS!!!!!!!: Nao Seleciona o diretorio a onde vc quer colocar porque da erro!!!!! 8hrs pra descobrir q não é pra selecionar nenhum diretorio)
+        (nao seleciona tambem o (modo developer))
+        
         entrar em configuracoes
             entrar em sobre 
                 configuracao avancadas do sistema
