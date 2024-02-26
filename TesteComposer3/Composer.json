@@ -1,8 +1,0 @@
-{
-    "name": "arthur/projeto",
-    "autoload": {
-        "psr-4": {
-            "APP\\":"app/"
-        }
-    }
-}
