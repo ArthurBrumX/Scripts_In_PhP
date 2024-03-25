@@ -1,0 +1,34 @@
+Escapando o HTML
+
+Tudo fora de um par de tags de abertura e fechameto é ignorado pelo interpretador PHP, o que permite que
+arquivos php tenham conteudo misto. Isso permite que o PHP seja incluido em documento HTML, por exemplo
+para criar templates.
+
+    <p> Isso sera ignorado pelo php e exibido pelo navegador </p>
+    <?php echo 'Enquanto isto vai ser interpretado.';?>
+    <p>Isso tambem sera ignorado pelo php e exibido no navegador.</p>
+
+Isso funcionará como esperado, porque quando o interpretador php encontra a tag de fechamento ?>, ele simplesmente
+comeca a repassar oque quer qe enconre (exeto a nova linha imediata veja a secao sobre 'separacao de instrucoes')
+até encontrar outra tag de abertura, a menos que esteja no meio de uma declarao condicional, caso em que
+o interpretador determinara o resultado condicional antes de descidir qual caminho tomar. veja o proximo exemplo.
+
+Usando estruturas com condicoes
+
+Exemplo 1 escape avancado usando condicoes
+
+    <?php if($expression == true): ?>
+        <!-- Isso iráa aparecer se a expressao for verdadeira. -->
+
+    <?php else: ?>
+        <!-- Se nao isso erá aparecer. -->
+
+    <?php endif; ?>
+
+Neste exemplo, o php pulara os blocos onde a condicao nao for satisfeita, mesmo que os trechos de codigo estejam
+fora das tags de abertura e fechamento do php, pois o interpretador php pulara os blocos contidos em uma condicional
+que nao foi satisfeita. Para imprimir grandes blocos de texto, sair do modo de interpretacao do php de texto
+sair do modo de interpretacao do php e geralemte mais eficiente do que enviar todo o texto usando echo ou print.
+
+    Nota: se o php for incluido no XML ou XHTML, as tags normais <?php ?> devem ser usadas para manter a 
+    conformidade com os padroes.

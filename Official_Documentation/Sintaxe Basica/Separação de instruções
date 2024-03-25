@@ -1,0 +1,13 @@
+Separação de instruções
+
+como em C ou perl, o php requer que as instrucoes sejam terminadas com um ponto e virgula no final de cada declaracao.
+A tag d fechamento de um bloco de codigo php implica automaticamente em um ponto e virgula; a ultima linha de um bloco
+php nao precisa ser terminada com um ponto e virgula. A tag de fechamento do bloco incluira uma nova linha em seguida
+se estiver presente.
+
+exemplo 1 exemplo mostrando a tag de fechamento incluindo uma nova linha final
+
+    <?php echo "algum texto"; ?>
+    sem nova linha
+
+    <?= "mas agora há uma nova linha" ?>
