@@ -1,0 +1,39 @@
+Tags PHP
+
+Quando o PHP processa um arquivo, ele procura tags de abertura e fechamento, 
+<?php e ?>, quer dizem ao PHP para iniciar ou para a interpretacao do codigo entre elas.
+Essa forma de processamento permite que o php seja incuido em todo tipo de documentacao, pois tudo
+que estiver fora desras tags sera ignorado pelo interpretador php.
+
+O php inclui uma tag echo curta <?= que é uma forma abreviada da forma mais verbosa <?php echo.
+
+Exemplo #1 tags de abertura e fechamento to php
+
+    1. <?php echo 'se quiser servir codigo php em documentos XHTML ou XML,
+    use essas tags'; ?>
+
+    2. A tag echo curta <?= 'Imprima essa string' ?> tambem pode ser usada.
+        Ela é equivalente a <?php echo 'imprima essa string' ?>
+
+    3. <? echo 'Este codigo esta entre tags curtas, mas só funcionará'. 'se a diretiva short_open_tag estiver
+    habilitada'; ?>
+
+As tags curtas (exemplo 3) estao disponiveis por padrao, mas podem ser desabilitadas atraves da diretiva
+short_open_tag no arquivo de configuracao php.ini, ou estarao desabilitadas por padrao se o php for compilado
+com a configuracao --disable-short-tags.
+
+nota:
+    como as tags curtas podem ser desabilitadas, é recomendado usar apenas as tags normais (<?php ?> e <?= ?>)
+    para minimizar  compatibilidade.
+
+Se um arquivo contiver apenas codigo php é preferivel omitir a tag e fehamento do php no final do arquivo.
+isso evita que espacos em branco ou novas linhas sejam adcionados acidentalmente apos a tag de fechamento do php,
+o que pode causar efeitos indesejdos, porque o php iniciara o buffer de saida quando nao houver intencao de enviar
+qualquer saida naquele ponto do script.
+
+<php
+    echo "Olá, Mundo!";
+    // ...mais codigo
+
+    echo "Ultimo Declaracao";
+    // o script termina aqui sem a tag de fechamento do php
